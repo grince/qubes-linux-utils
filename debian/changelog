@@ -1,3 +1,55 @@
+qubes-utils (4.2.16) unstable; urgency=medium
+
+  [ Marek Marczykowski-Górecki ]
+  * ci: collect test coverage from qrexec-lib too
+  * Fix imgconverter tests
+  * Switch to sequoia for codecov signature check
+
+  [ Demi Marie Obenour ]
+  * Math and currency symbols are safe for display
+
+ -- Marek Marczykowski-Górecki <marmarek@invisiblethingslab.com>  Thu, 02 May 2024 02:41:30 +0200
+
+qubes-utils (4.2.15) unstable; urgency=medium
+
+  [ Marek Marczykowski-Górecki ]
+  * rpm: fix missing directory ownership
+  * genfs: fix build/link flags
+  * rpm: adjust dependencies for openSUSE
+
+  [ Demi Marie Obenour ]
+  * Avoid writing junk into Xenstore
+
+  [ Rusty Bird ]
+  * qrexec-lib/pack: don't use curly quotes in error messages
+  * qrexec-lib/pack: sanitize straight quotes in remote filenames
+
+ -- Marek Marczykowski-Górecki <marmarek@invisiblethingslab.com>  Mon, 04 Dec 2023 02:46:39 +0100
+
+qubes-utils (4.2.14) unstable; urgency=medium
+
+  [ Demi Marie Obenour ]
+  * Expose code point allowlist checking API
+
+  [ Rusty Bird ]
+  * qrexec-lib/unpack: fail on EOF before end of transfer marker
+
+  [ Demi Marie Obenour ]
+  * Block Zalgo text
+
+ -- Marek Marczykowski-Górecki <marmarek@invisiblethingslab.com>  Thu, 28 Sep 2023 01:50:12 +0200
+
+qubes-utils (4.2.13) unstable; urgency=medium
+
+  [ Demi Marie Obenour ]
+  * Link against just-built libqubes-pure
+  * Stricter symbolic link checks
+  * Test rejection of codepoints past 0x10FFFFF
+  * Make qubes_pure_string_safe_for_display() usable
+  * Drop unmaintained asynctest library
+
+ -- Marek Marczykowski-Górecki <marmarek@invisiblethingslab.com>  Sun, 10 Sep 2023 04:22:12 +0200
+
 qubes-utils (4.2.12) unstable; urgency=medium
 
   * debian: split libqubes-pure into separate package
